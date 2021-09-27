@@ -1,0 +1,69 @@
+<html>
+
+<head>
+  <title>Image recognition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <center>
+      <h3 class="btn btn-default heading">IMAGE RECOGNITION</h3>
+      <br>
+      <br>
+      <p class="subheading">Model is trained to identify the following objects.</p>
+      <b class="name-of-objects">
+        Watch
+        <hr>
+        book
+        <hr>
+        phone
+        <hr>
+        waterbottle
+        <hr>
+      </b>
+      <label>
+        Webcam veiw
+      </label>
+      <div id="camera-fix">
+        <div id="camera"></div>
+      </div>
+      <br>
+      <br>
+      <div id="result-fix">
+        <div id="result"></div>
+      </div>
+      <br>
+      <br>
+      <button onclick="saveImage()" class="btn btn-info">
+        Capture Image
+      </button>
+      <br>
+      <br>
+      <button onclick="SaveSnapshot()" class="btn btn-success">
+        Identify Image
+      </button>
+      <p>
+        Object :
+        <span id="resultObjectname"></span>
+      </p>
+      <p>
+        Accuracy :
+        <span id="resultAccuracy"></span>
+      </p>
+    </center>
+
+  </div>
+</body>
+<script src="main.js"></script>
+
+</html>

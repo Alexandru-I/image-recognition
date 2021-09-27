@@ -1,0 +1,46 @@
+.heading{
+    width: 80%;
+    font-size: 22px;
+}
+
+.subheading{
+    font-size: 22px;
+    font-family: cursive;
+}
+
+.name-of-objects{
+    color: goldenrod;
+}
+body{
+    background: linear-gradient(to left, blue,green);
+    color: white;
+}
+
+
+#camera-fix{
+    border: 15px;
+    border-style: dashed;
+    border-color: black;
+    width: 400px;
+    height: 350px;
+    border-image: url(https://cdn.pixabay.com/photo/2020/02/06/01/52/frame-4822807__480.png) 50 round;
+}
+
+#resultObjectname{
+    color: goldenrod;
+}
+
+
+#result-fix{
+    border: 15px;
+    border-style: dashed;
+    border-color: black;
+    width: 400px;
+    height: 350px;
+    border-image: url(https://cdn.pixabay.com/photo/2020/02/06/01/52/frame-4822807__480.png) 50 round;
+}
+
+#snapshot{
+    width: 350px;
+height: 300px ;
+}
